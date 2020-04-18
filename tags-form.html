@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Etiquetas HTML5</title>
-        <link rel="stylesheet" href="">
+       
     </head>
     <body>
       
@@ -91,21 +91,33 @@
                 <h2>Contactos</h2>
                 <form action="*">
                 
-                <div>   
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
+                <div class="formulario">   
+
+                    <label for="nombre">Nombre:</label>
+                    <input name="nombre" type="text" placeholder="Ingresa Nombre" required pattern="[A-Za-z]+" >
+                    <br>
+                     <label for="apellido">Apellido:</label>
+                     <input name="apellido" type="text" placeholder="Ingrese Apellido" required pattern="[A-Za-z]+">
+                
                 </div> 
 
-                <div>
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Celular">
+                <div class="formulario">
+                    <label for="age">Edad:</label>
+                    <input name="age" type="number" placeholder="Edad" min="18" max="80" required>
+                    <br>                    
+                    <label for="dni">DNI:</label>:</label>
+                    <input name="dni" type="text" placeholder="Edad" pattern="[A-Za-z0-9]+" maxlength="8" required>
+                    <br>
+                    <label for="correo">Correo:</label>
+                    <input name="correo" type="email" placeholder="Ingrese su correo" required>
+
                 </div>
 
-                <div>
+                <div class="formulario">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion"></textarea>
                 </div>
 
-                <div>
+                <div class="formulario">
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpiar</button>
                 </div>
@@ -119,5 +131,18 @@
             <p>Hackaton perteneciente a John Arias</p>
         </footer>
         
+        <style>
+
+            input:focus {
+            border: red 2px dotted;
+            padding: 2px;
+            }
+            div.formulario {
+            border: black 5px solid;
+            margin: 10px;
+            padding: 10px;
+            }
+
+        </style>
     </body>
 </html>

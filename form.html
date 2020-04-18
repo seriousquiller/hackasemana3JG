@@ -1,0 +1,47 @@
+ <section>
+                <h2>Contactos</h2>
+                <form action="*">
+                
+                <div>   
+
+                    <label for="nombre">Nombre:</label>
+                    <input name="nombre" type="text" placeholder="Ingresa Nombre" required pattern="[A-Za-z]+" >
+                    <br>
+                     <label for="apellido">Apellido:</label>
+                     <input name="apellido" type="text" placeholder="Ingrese Apellido" required pattern="[A-Za-z]+">
+                
+                </div> 
+
+                <div>
+                    <label for="age">Edad:</label>
+                    <input name="age" type="number" placeholder="Edad" min="18" max="80" required>
+                    <br>                    
+                    <label for="dni">DNI:</label>:</label>
+                    <input name="dni" type="text" placeholder="Edad" pattern="[A-Za-z0-9]+" maxlength="8" required>
+                    <br>
+                    <label for="correo">Correo:</label>
+                    <input name="correo" type="email" placeholder="Ingrese su correo" required>
+
+                </div>
+
+               
+                <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+                </div>
+                
+                <style>
+
+                    input:focus {
+                    border: red 2px dotted;
+                    padding: 2px;
+                    }
+                    div {
+                    border: black 5px solid;
+                    margin: 10px;
+                    padding: 10px;
+                    }
+
+                </style>
+
+                </form>
