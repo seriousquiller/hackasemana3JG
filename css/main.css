@@ -1,0 +1,129 @@
+/*Global*/
+
+body {
+    background-color: #E5E5E5;
+    align-items: center;
+    
+}
+
+
+/*seccion1*/
+
+a.pregunta {
+    color: cornsilk;
+    font-size: xx-large;
+}
+
+h1.titulo  {
+    position: absolute;
+width: 321px;
+height: 74px;
+left: 350px;
+top: 25px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+color: #FFFFFF;
+font-size: 64px;
+line-height: 74px;
+}
+
+/*seccion 2*/
+
+
+section.about   {
+    display: block;
+}
+h2.presentacion {
+    position: absolute;
+width: 361px;
+height: 97px;
+left: 68px;
+top: 286px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+color: #FFFFFF;
+font-size: 36px;
+line-height: 42px;
+
+position: absolute;
+width: 365px;
+height: 117px;
+left: 52px;
+top: 270px;
+
+background: rgba(114, 153, 254, 0.5);
+border-radius: 10px;
+}
+
+
+/* Sobre mi */
+
+h2.sobremi {
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+section.sobremi {
+    background-color: #7299FE;
+}
+
+/* skills */ 
+
+h2.skills {
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+section.skills {
+    background-color: #9122FF;
+}
+
+
+/*Portafolio*/
+
+h2.portafolio {
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+section.portafolio  {
+    background-color: #FFD233;
+}
+
+/*Clientes*/
+
+h2.clientes {
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+section.clientes {
+    background-color: #3F4E62;
+}
+
+
+/*Contactos*/
+h2.contactos {
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+section.contactos {
+    background-color: #1687A0;
+}
+
+div.contactos {
+    border: black 5px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+div.contactos {
+     border: rgb(248, 248, 248) 5px solid;
+}
+
+      

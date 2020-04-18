@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Etiquetas HTML5</title>
+        <link rel="stylesheet" href="/css/main.css">
        
     </head>
     <body>
@@ -22,11 +23,11 @@
             </section>
 
             <!--Sobre Mi Seccion 2-->
-            <section class="about">
+            <section class="sobremi">
 
                 <h2 class="sobremi"; style="text-align: center;">Sobre mi</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cupiditate sapiente et quas assumenda temporibus officiis exercitationem nobis mollitia porro, illo, rerum ut, architecto sunt nihil repudiandae. Molestias, fuga cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis modi sed nemo ex maxime quas fugiat dignissimos. Quam praesentium soluta fugiat quidem atque! Placeat assumenda iusto, blanditiis pariatur perferendis facere? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti libero eaque nulla alias iusto odio nesciunt quo atque optio at dolores, possimus enim ut impedit voluptate. Aspernatur obcaecati placeat quia?</p>
-                <a href="/preguntas.html">Preguntas RETO 1</a> 
+                <a href="/preguntas.html" class="pregunta">Preguntas RETO 1</a> 
 
             </section>
 
@@ -34,7 +35,7 @@
 
             <section style="text-align: center;" ; class="skills">
                 
-                <h2>Mis Skills</h2>
+                <h2 class="skills">Mis Skills</h2>
                 <div style="display: flex;">
                 <div>
                     <h3 >
@@ -57,7 +58,8 @@
                 </div>
                     <!--Portafolio Seccion 3-->
             </section>
-            <h2 style="text-align: center;">Portafolio</h2>
+            <section class="portafolio">
+            <h2 class="portafolio" style="text-align: center;">Portafolio</h2>
             <div style="display: flex;">
                 <div>
 <figure> <img src="/images/image-9.png" alt=""></figure>
@@ -73,11 +75,11 @@
 <figure> <img src="/images/image-8.png" alt=""></figure>
    </div>   
 </div>
-        
+</section>
 <!--Clientes Seccion 4-->
 
-<section>
-    <h2 style="text-align: center;">Clientes</h2>
+<section class="clientes">
+    <h2 class="clientes" style="text-align: center;">Clientes</h2>
 
     <div style="display: flex;">
     <figure><img src="/images/image-1.png" alt=""></figure>
@@ -86,46 +88,37 @@
     <figure> <img src="/images/image-1.png" alt=""></figure>
 </div>
             </section>
-
-            <section>
-                <h2>Contactos</h2>
+          
+            <section class="contactos"> 
+                <div class="formulario">
+                <h2 class="contactos" style="text-align: center;">Contactos</h2>
                 <form action="*">
                 
-                <div class="formulario">   
-
+                
                     <label for="nombre">Nombre:</label>
                     <input name="nombre" type="text" placeholder="Ingresa Nombre" required pattern="[A-Za-z]+" >
                     <br>
                      <label for="apellido">Apellido:</label>
                      <input name="apellido" type="text" placeholder="Ingrese Apellido" required pattern="[A-Za-z]+">
-                
-                </div> 
-
-                <div class="formulario">
+                          <br>    
                     <label for="age">Edad:</label>
                     <input name="age" type="number" placeholder="Edad" min="18" max="80" required>
                     <br>                    
                     <label for="dni">DNI:</label>:</label>
-                    <input name="dni" type="text" placeholder="Edad" pattern="[A-Za-z0-9]+" maxlength="8" required>
+                    <input name="dni" type="text" placeholder="Ingrese DNI" pattern="[A-Za-z0-9]+" maxlength="8" required>
                     <br>
                     <label for="correo">Correo:</label>
                     <input name="correo" type="email" placeholder="Ingrese su correo" required>
-
-                </div>
-
-                <div class="formulario">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion"></textarea>
-                </div>
-
-                <div class="formulario">
+               <br>
+               <br>
+             
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpiar</button>
-                </div>
-                
+                                
                 </form>
-                
+            </div>
             </section>
-
+       
         </main>
         <footer>
             <p>Hackaton perteneciente a John Arias</p>
@@ -138,7 +131,7 @@
             padding: 2px;
             }
             div.formulario {
-            border: black 5px solid;
+           
             margin: 10px;
             padding: 10px;
             }
